@@ -1,0 +1,35 @@
+/* body {
+    background-image: url(https://images8.alphacoders.com/512/thumb-1920-512776.jpg)//this one was too dark to read unless I got a wrapper or something 
+} */
+
+body {
+    background-image: url(http://wallpapercave.com/wp/BcIbIOd.jpg);
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+
+.jumbotron {
+    border-bottom: 50%;
+    text-align: center;
+}
+.center {
+    padding: 70px 0;
+    border: 3px;
+    text-align: center;
+}
+#quiz_questions {
+    text-align: center;
+}
+#timer {
+    align-content: center;
+}
+
+.wrapper {
+    align-content: center;
+}
+
+
+#h1 {
+    text-align: center;
+    
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- here is the link for game idea https://www.youtube.com/watch?v=fBIj8YsA9dk&feature=youtu.be -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disney Trivia Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- Jumbrotron/Container and also some background behind container -->
+    <!-- Disney Trivia Game header -->
+    <div class="container">
+        <div id="trivia_quiz">
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                                <h1 class="display-6">Disney Trivia</h1>
+                            </div>
+                        </div>
+                        <div id="timer">
+                            Seconds Remaining: <span id="timer_display">90</span>
+                        </div>
+                    </header>
+
+
+                </div>
+            </div>
+            <div id="quiz_questions">
+                <div id="question1">
+                    <div class="row">
+                        <div class="question">
+                            How many eggs does Gaston eat for breakfast in the movie Beauty and the Beast?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="answers">
+                            <span><input type="radio" name="answer_1" /> 3</span>
+                            <span><input type="radio" name="answer_1" /> 30</span>
+                            <span><input type="radio" name="answer_1" /> 2 Dozen</span>
+                            <span><input type="radio" name="answer_1" /> None</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="question2">
+                    <div class="row">
+                        <div class="question">
+                            What is the name of the horse in the movie Tangled?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="answers">
+                            <span><input type="radio" name="answer_2" /> Khan</span>
+                            <span><input type="radio" name="answer_2" /> Maximus</span>
+                            <span><input type="radio" name="answer_2" /> Philippe</span>
+                            <span><input type="radio" name="answer_2" /> Angus</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="question3">
+                    <div class="row">
+                        <div class="question">
+                            Who is the main "bad guy" in the movie Aladdin?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="answers">
+                            <span><input type="radio" name="answer_3" /> Prince Abubu</span>
+                            <span><input type="radio" name="answer_3" /> Genie</span>
+                            <span><input type="radio" name="answer_3" /> Rajah</span>
+                            <span><input type="radio" name="answer_3" /> Jafar</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="question4">
+                    <div class="row">
+                        <div class="question">
+                            What did Bambi call the skunk?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="answers">
+                            <span><input type="radio" name="answer_4" /> Rose</span>
+                            <span><input type="radio" name="answer_4" /> Samantha</span>
+                            <span><input type="radio" name="answer_4" /> Flower</span>
+                            <span><input type="radio" name="answer_4" /> Owl</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="question5">
+                    <div class="row">
+                        <div class="question">
+                            What location did Walt Disney get the inspiration for Cinderella's Castle?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="answers">
+                            <span><input type="radio" name="answer_5" /> Bavaria</span>
+                            <span><input type="radio" name="answer_5" /> Lichtenstein</span>
+                            <span><input type="radio" name="answer_5" /> Windsor Castle</span>
+                            <span><input type="radio" name="answer_5" /> England</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <button id="submit">Submit Quiz</button>
+            </div>
+            <div id="results">Results</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap js and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
+
+
+
+<!-- Q1: How many eggs does Gaston eat for breakfast in the movie Beauty and the Beast? -->
+<!-- A1: ["3", "30", "2 dozen", "none"] -->
+<!-- validAnswer: 2 -->
+<!-- Q2: What is the name of the horse in the movie Tangled? -->
+<!-- A2: ["Khan", "Maximus", "Philippe", "Angus" ] -->
+<!-- validAnswer: 1 -->
+<!-- Q3: Who is the main "bad guy" in the movie Aladdin? -->
+<!-- A3: ["Prince Abubu", "Genie", "Rajah", "Jafar"] -->
+<!-- validAnswer: 3 -->
+<!-- Q4: What did Bambi call the skunk?-->
+<!-- A4: ["Rose", "Samantha", "Flower", "Owl"] -->
+<!-- validAnswer: 2 -->
+<!-- Q5: What location did Walt Disney get the inspiration for Cinderella's Castle? -->
+<!-- A5: ["Bavaria", "Lichtenstein", "Windsor Castle", "England"] -->
+<!-- validAnswer: 0 -->
