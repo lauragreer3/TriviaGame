@@ -21,28 +21,37 @@ var TriviaGame = {
         },
         getAnswers: function () {
             var num_questions = this.correct_answers.length;
-            for (var x = 1; x < num_questions; x++) {
+            for (var x = 1; x <= num_questions; x++) {
                 var current_answer = $("input:radio[name='answer_" + x + "']:checked").val();
                 console.log("User answered " + current_answer + " for question" + x);
-                if (current_answer == this.correct_answers[x - 1]) {
+                if (current_answer == this.correct_answers[x - 1])
+                {
                     this.num_correct++;
                     console.log("Correct");
-                } else {
+                } 
+                else
+                {
                     this.num_incorrect++;
                     console.log("Incorrect");
                 }
-                $("#submit").hide();
-                this.showResults();
-            },
-            showResults: function () {
-                $("#num_correct").text(this.num_correct);
-                $("#num_incorrect").text(this.num_incorrect);
-                $("div#results").show();
+
+            }
+            $("#submit").hide();
+            this.showResults();
+        },
+        showResults: function () {
+            $("#num_correct").text(this.num_correct);
+            $("#num_incorrect").text(this.num_incorrect);
+            $("div#results").show();
             }
         };
 
         $(document).ready(function () {
 
-            startTimer();
+            TriviaGame.startTimer(TriviaGame);
+            $("button#submit").click(function() {
+                clearInterval(TriviaGame.game_timer);
+                TriviaGame.getAnswers();
+            })
 
         });
